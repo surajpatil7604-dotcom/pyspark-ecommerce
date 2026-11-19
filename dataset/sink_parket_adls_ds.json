@@ -23,7 +23,35 @@
 			},
 			"compressionCodec": "snappy"
 		},
-		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_unique_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_zip_code_prefix",
+				"type": "INT32"
+			},
+			{
+				"name": "customer_city",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_state",
+				"type": "UTF8"
+			},
+			{
+				"name": "ingest_at",
+				"type": "INT96"
+			},
+			{
+				"name": "source_system",
+				"type": "UTF8"
+			}
+		]
+	}
 }

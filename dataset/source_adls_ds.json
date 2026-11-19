@@ -1,10 +1,6 @@
 {
 	"name": "source_adls_ds",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "source_adls_ls",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"filename": {
 				"type": "string"
@@ -49,6 +45,5 @@
 				"type": "String"
 			}
 		]
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }

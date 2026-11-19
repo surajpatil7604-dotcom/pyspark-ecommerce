@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "bronze",
+				"name": "bronze_layer",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -23,11 +23,11 @@
 				}
 			},
 			{
-				"name": "sliver",
+				"name": "sliver_layer",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "bronze",
+						"activity": "bronze_layer",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -50,11 +50,11 @@
 				}
 			},
 			{
-				"name": "gold",
+				"name": "gold_layer",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "sliver",
+						"activity": "sliver_layer",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -77,8 +77,6 @@
 				}
 			}
 		],
-		"annotations": [],
-		"lastPublishTime": "2026-11-19T04:26:50Z"
-	},
-	"type": "Microsoft.DataFactory/factories/pipelines"
+		"annotations": []
+	}
 }
