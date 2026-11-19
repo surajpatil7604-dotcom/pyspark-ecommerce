@@ -1,0 +1,16 @@
+{
+	"name": "devteamadf2026",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "df9c0efc-c08d-4641-a9ae-6aabe016ecc5",
+		"tenantId": "1aa7aef0-9a96-404d-95a9-b60ace493d45"
+	}
+}
